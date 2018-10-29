@@ -1,0 +1,23 @@
+<input type = "button" onclick = "cl()" value = "Нажми">
+<p id = "text"></p>
+<script>
+function cl() {
+    document.getElementById('text').innerHTML = 'Вы нажали ' + (cl.num++) + ' раз';
+}
+
+cl.num = 0;
+</script>
+<script>-
+var text = document.getElementById('text');
+var count = document.getElementById('count');
+
+count.innerHTML = text.innerHTML.length;
+</script>
+
+<TR>
+<TD><INPUT type="button" name="b0" value="0" disabled="1"></TD>
+<TD><INPUT type="button" name="fix" value="." disabled="1" onClick="digit('.')"></TD>
+<TD><INPUT type="button" name="res" value="=" disabled="1" onClick="result()"></TD>
+<TD><INPUT type="button" name="add" value="+" disabled="1" onClick="expr(4)"></TD>
+<TD><INPUT type="button" name="fault" value="ON/C" onClick="plug()"></TD>
+</TR>
